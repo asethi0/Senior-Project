@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Websockets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+<div class="container">
+    <h1>Socket Chat</h1>
+    <p class="lead">Chat Application for Betcha</p>
+
+    <div class="row">
+        <div class="col-9">
+            <div class="container-fluid">
+                <!-- Twitch Video Container -->
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe
+                                class="embed-responsive-item"
+                                src="http://player.twitch.tv/?channel=drdisrespectlive&muted=true"
+                                height="480"
+                                width="360"
+                                frameborder="0"
+                                scrolling="no"
+                                allowfullscreen="true">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Bet View Container -->
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Column -->
+        <div class="col-3">
+            <ul id="userList" class="list-group"></ul>
+            <div id="chat"></div>
+            <div id="chatControls" class="form-group">
+                <input id="message" placeholder="Type your message" class="form-group">
+                <button id="send" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="websocket.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
